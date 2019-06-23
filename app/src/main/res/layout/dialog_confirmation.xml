@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/CapD_transparent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/card_blue_shape"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="모임 일정을 삭제하시겠습니까?"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/delete_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/delete_confirm"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/delete_confirm"
+            android:background="@drawable/button_shape"
+            android:text="취소"
+            android:textColor="@color/CapD_color_main"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/delete_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/button_shape"
+            android:text="확인"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

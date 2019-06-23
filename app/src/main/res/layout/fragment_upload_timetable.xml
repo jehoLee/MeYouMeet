@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_circle_shape"
+        android:text="+"
+        android:textSize="18sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/upload_later_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/upload_button"-->
+        <!--android:layout_centerInParent="false"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
+        <!--android:text="나중에 등록하기"-->
+        <!--android:textIsSelectable="false"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/desc2"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:text="시간표 등록"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_button"
+        android:layout_centerInParent="true"
+        android:text="캡처한 시간표 이미지를 업로드 해주세요"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_blue_shape"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card:cardCornerRadius="5dp"
+        card:cardElevation="5dp"
+        card:contentPadding="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="모임 탭"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alert_content"
+                android:layout_width="match_parent"
+                android:layout_height="15sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="새로운 모임에 추가되었어요: 강정흠님이 캡디 팀프 모임에 추가하였습니다."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/alert_time"
+                android:layout_width="wrap_content"
+                android:layout_height="15sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:text="05/21 06:11"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

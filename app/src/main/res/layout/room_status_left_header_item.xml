@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/left_cell_width"
+    android:layout_height="@dimen/room_status_cell_length"
+    android:id="@+id/status_left_header">
+
+<LinearLayout
+        android:id="@+id/left_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/normal_cell_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alphabet_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#FF333333"
+            android:textSize="12sp"
+            tools:text="A" />
+
+        <TextView
+            android:id="@+id/time_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#FF999999"
+            android:textSize="10sp"
+            tools:text="9:00~10:30" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/bg_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_line" />
+</RelativeLayout>

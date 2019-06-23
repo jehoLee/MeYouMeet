@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="normal_cell_bg">#FEFFFE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#4BAF50</color>
+    <color name="gray">#FF666666</color>
+    <color name="trans_gray">#4B666666</color>
+    <color name="red">#AF0000</color>
+    <color name="bg_line">#E7E7E7</color>
+    <color name="text_dark1">#333333</color>
+    <color name="text_dark2">#666666</color>
+    <color name="text_dark3">#999999</color>
+    <color name="Subject1">#212121</color>
+    <color name="Subject2">#64d8ef</color>
+    <color name="Subject3">#A981FF</color>
+    <color name="Subject4">#FFEB3B</color>
+    <color name="Subject5">#3F51B5</color>
+    <color name="Subject6">#F44336</color>
+    <color name="Subject7">#f9266f</color>
+    <color name="Subject8">#0A5C10</color>
+    <color name="Subject9">#E29305</color>
+    <color name="Subject10">#C2FC7F</color>
+    <color name="Subject11">#0B2974</color>
+    <color name="Subject12">#7E6D30</color>
+    <color name="Subject13">#8BC34A</color>
+    <color name="Subject14">#43A37D</color>
+    <color name="Subject15">#927296</color>
+
+    <color name="bg_color">#FF99DCD7</color>
+    <color name="tab_indicator_color">#66aea9</color>
+    <color name="tab_text_color">#74c6c0</color>
+    <color name="calendar_date_banner_background">#FFEEEEEE</color>
+
+    <color name="CapD_color_main">#246DCB</color>
+    <color name="CapD_color_sub_main">#5C82F3</color>
+
+    <color name="CapD_color_background">#FAFAFA</color>
+    <color name="CapD_color_button">#FFFFFF</color>
+    <color name="CapD_transparent">#00000000</color>
+
+</resources>

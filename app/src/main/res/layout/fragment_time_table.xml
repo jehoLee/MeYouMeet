@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_time_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/center_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="시간표"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/change_timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="94dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_plus" />
+
+        <ImageButton
+            android:id="@+id/compare_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="95dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_compare_selected"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="53dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_calendar" />
+
+        <ImageButton
+            android:id="@+id/compare"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="54dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_compare"
+            tools:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_refresh" />
+
+        <Button
+            android:id="@+id/append_timetable_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/button_textshape"
+            android:clickable="true"
+            android:text="추가"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <cn.zhouchaoyuan.excelpanel.ExcelPanel
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_cell_width="@dimen/left_cell_width"
+        app:normal_cell_width="@dimen/room_status_cell_length"
+        app:top_cell_height="@dimen/top_cell_height"/>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center" />-->
+
+
+</LinearLayout>

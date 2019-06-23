@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/jeholee/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "lib_opencv-Debug-armeabi-v7a": {
+      "artifactName": "lib_opencv",
+      "abi": "armeabi-v7a",
+      "output": "/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/sdk/native/libs/armeabi-v7a/libopencv_java4.so"
+    },
+    "native-lib-Debug-armeabi-v7a": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/jeholee/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+      "abi": "armeabi-v7a",
+      "output": "/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so"
+    }
+  }
+}

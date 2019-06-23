@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/CapD_transparent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/card_blue_shape"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/meeting_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_name_text"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/meeting_loc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_loc_text"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textviewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="30dp"
+            android:text="모임 일정 수정"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/meeting_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewLogo"
+            android:text="모임 일정 제목"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/meeting_loc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_name_edit"
+            android:layout_marginTop="10dp"
+            android:text="일정 장소"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/confirm_revise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_loc_edit"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="수정"
+            android:textColor="@color/CapD_color_main" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_loc_edit"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/confirm_revise_button"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="취소"
+            android:textColor="@color/CapD_color_main" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CapD_color_main"
+    tools:context=".MeetingCreateActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="모임 일정 생성"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark1"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/create_meeting_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_textshape"
+            android:clickable="true"
+            android:text="확인"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/info_enter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarLayout"
+        android:layout_alignParentBottom="false"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_white_shape"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/group_members_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/participants_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일정에 참여하는 친구" />
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/friend_select_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/participants_num"-->
+            <!--android:background="@color/white"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingRight="25dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:visibility="visible">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/select_friend_btn"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentLeft="false"-->
+            <!--android:layout_alignParentTop="false"-->
+            <!--android:layout_centerInParent="false"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:background="@drawable/button_circle_shape"-->
+            <!--android:gravity="center"-->
+            <!--android:text="+"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/desc0"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/select_friend_btn"-->
+            <!--android:layout_alignParentTop="false"-->
+            <!--android:layout_alignParentEnd="false"-->
+            <!--android:layout_alignParentBottom="false"-->
+            <!--android:layout_centerHorizontal="false"-->
+            <!--android:text="일정에 초대할 친구 선택하기"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="18sp" />-->
+            <!--</RelativeLayout>-->
+
+            <HorizontalScrollView
+                android:id="@+id/participants_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/participants_num"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/participants_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:divider="@drawable/divider"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:showDividers="middle" />
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meeting_title_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_members_view"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모임 일정 제목" />
+
+            <EditText
+                android:id="@+id/meeting_title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc1"
+                android:ems="10" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/meeting_type_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_location_enter"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="일정 타입" />
+
+            <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/group_tag_edit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/desc_text_2"-->
+            <!--android:text="#" />-->
+
+            <Spinner
+                android:id="@+id/meeting_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc2"
+                android:spinnerMode="dropdown" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/meeting_location_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_title_enter"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/desc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일정 장소" />
+
+            <EditText
+                android:id="@+id/meeting_location_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc5"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/meeting_time_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_type_enter"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="일정 시간" />
+
+            <RelativeLayout
+                android:id="@+id/get_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc3">
+
+                <Button
+                    android:id="@+id/get_available_time_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_circle_shape"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/desc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/get_available_time_btn"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginTop="20dp"
+                    android:text="모일 수 있는 시간 조회하기"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selected_time_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/desc3"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/selected_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="TextView"
+                    android:textColor="@color/CapD_color_main"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="false"
+        android:background="@color/CapD_color_main"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

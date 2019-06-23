@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "292219861452",
+    "firebase_url": "https://capdamerica-4a594.firebaseio.com",
+    "project_id": "capdamerica-4a594",
+    "storage_bucket": "capdamerica-4a594.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292219861452:android:1786689a2d5b9968",
+        "android_client_info": {
+          "package_name": "ajou.com.skechip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292219861452-mq0h01t0c07823finm5l7ll4f0sqgp3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-GorXKLfI-U0Ch-uC3hssqyvHz2l3qFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292219861452-mq0h01t0c07823finm5l7ll4f0sqgp3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

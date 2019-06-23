@@ -1,0 +1,3 @@
+/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/edit_cache.dir
+/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/jeholee/AndroidStudioProjects/CapD_America_ver3/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/native-lib.dir
